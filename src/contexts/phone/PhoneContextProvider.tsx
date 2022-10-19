@@ -24,5 +24,3 @@ const PhoneContextProvider = ({
 };
 
 export default PhoneContextProvider;
-
-//crear estado para oncall con boolean
