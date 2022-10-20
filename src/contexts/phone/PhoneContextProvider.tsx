@@ -9,7 +9,7 @@ const PhoneContextProvider = ({
   children,
 }: PhoneContextProviderProps): JSX.Element => {
   const [phoneNumbers, setPhoneNumbers] = useState<number[]>([]);
-  const [onCall, setOnCall] = useState(false);
+  const [onCall] = useState(false);
   const loadPhoneNumbers = useCallback((phoneNumbers: number[]) => {
     setPhoneNumbers(phoneNumbers);
   }, []);
