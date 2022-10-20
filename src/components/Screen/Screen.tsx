@@ -4,7 +4,7 @@ interface ScreenProps {
 }
 
 const Screen = ({ numbers, action }: ScreenProps): JSX.Element => {
-  return <div className="screen"></div>;
+  return <span className="number"></span>;
 };
 
 export default Screen;
