@@ -4,7 +4,18 @@ interface KeyProps {
 }
 
 const Key = ({ text, action }: KeyProps): JSX.Element => {
-  return <button className="key">1</button>;
+  return (
+    <button
+      className={`key ${typeof text === "string" ? "big" : ""}`}
+      type="button"
+      onClick={(event) => {
+        event.preventDefault();
+        action(text);
+      }}
+    >
+      {text}
+    </button>
+  );
 };
 
-export default KeyProps;
+export default Key;
