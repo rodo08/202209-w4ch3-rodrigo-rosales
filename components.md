@@ -44,6 +44,12 @@
 
 - Show buttons with numbers from 0 to 9 and "delete", 11 in total
 
+## Key
+
+### Show Data
+
+- Show button with numbers on it from either 0 to 9 or "delete"
+
 ### Get Actions
 
 - On click call the received action
